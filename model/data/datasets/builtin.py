@@ -7,16 +7,18 @@ import json
 from detectron2.data.datasets import register_coco_instances
 
 _PREDEFINED = [
-    ("DIOR_train", "DIOR/train", "DIOR/annotations/train.json"),
-    ("DIOR_test", "DIOR/test", "DIOR/annotations/test.json"),
-    ("ArTaxOr_train", "ArTaxOr/train", "ArTaxOr/annotations/train.json"),
-    ("ArTaxOr_test", "ArTaxOr/test", "ArTaxOr/annotations/test.json"),
-    ("UODD_train", "UODD/train", "UODD/annotations/train.json"),
-    ("UODD_test", "UODD/test", "UODD/annotations/test.json")
+    #("DIOR_train", "DIOR/train", "DIOR/annotations/train.json"),
+    #("DIOR_test", "DIOR/test", "DIOR/annotations/test.json"),
+    #("ArTaxOr_train", "ArTaxOr/train", "ArTaxOr/annotations/train.json"),
+    #("ArTaxOr_test", "ArTaxOr/test", "ArTaxOr/annotations/test.json"),
+    #("UODD_train", "UODD/train", "UODD/annotations/train.json"),
+    #("UODD_test", "UODD/test", "UODD/annotations/test.json")
+    ("scenario_1_test", "scenario_1/images", "scenario_1/annotations/test.json"),
+    ("scenario_1_10shot", "scenario_1/images", "scenario_1/annotations/10_shot.json"),
 ]
 
 
-for shot in [1,5,10]:
+for shot in []:
     new_anns =  ("DIOR_{}shot".format(shot),
                "DIOR/train",
                "DIOR/{}_shot.json".format( shot)) 
