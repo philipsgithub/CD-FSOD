@@ -65,6 +65,8 @@ cd CD-FSOD
 * Install PyTorch 1.10 with CUDA 11.3
 
 ```
+conda create -n woody_panda python=3.8
+conda activate woody_panda
 conda install pytorch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0 cudatoolkit=11.3 -c pytorch -c conda-forge # pytorch 1.9.0 seems to be without cuda 11.3 support
 conda install setuptools==59.5.0 # fix distutils version bug
 ```
@@ -112,7 +114,7 @@ python -m pip install -r requirements.txt
 For example:
 
 ```
-    bash run.sh DIOR
+    bash run.sh scenario_1
 ```
 
 
