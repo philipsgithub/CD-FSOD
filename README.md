@@ -65,7 +65,8 @@ cd CD-FSOD
 * Install PyTorch 1.10 with CUDA 11.3
 
 ```
-conda install pytorch==1.9.0 torchvision==0.10.0 torchaudio==0.9.0 cudatoolkit=11.3 -c pytorch -c conda-forge
+conda install pytorch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0 cudatoolkit=11.3 -c pytorch -c conda-forge # pytorch 1.9.0 seems to be without cuda 11.3 support
+conda install setuptools==59.5.0 # fix distutils version bug
 ```
 
 * Install [Detectron2](https://github.com/facebookresearch/detectron2)
